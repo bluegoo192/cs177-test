@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/log', function(req, res, next) {
   console.log("Someone saw this comment");
   console.log(req);
+  res.send(200);
 });
 
 module.exports = router;
